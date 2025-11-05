@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!-- Bootstrap 5.3 template designed for Web and Time-Based Design Subject [DESN1021]- 2023 -->
+<!-- Date: 13 October 2023  -->
+<!-- Author: Web and Time Based Subject -->
+
+<html lang="en" dir="ltr">
+
+<head>
+  
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+<!-- BOOTSTRAP META TAGS - Start -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- BOOTSTRAP META TAGS - End -->
+
+<!-- META TAGS - Start -->
+<meta name="description" content="Marge Simpsons Portfolio Website">
+<meta name="author" content="Marge Simpson">
+<!-- META TAGS - End -->
+
+<!-- BOOTSTRAP 5 ICONS - Start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!-- BOOTSTRAP 5 ICONS - End -->
+
+<!-- FAVICON - Start - Adapted from: https://favicon.io/ -->
+ <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+<!-- FAVICON - End -->
+
+<!-- MATERIAL ICONS - Start: https://fonts.google.com/icons?selected=Material+Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- MATERIAL ICONS - End -->
+  
+<!-- GOOGLE FONTS - Start: Oswald and Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+<!-- GOOGLE FONTS - End -->
+
+<!-- BOOTSTRAP 5 - Centre Navigation Logo - Start: https://www.codehim.com/bootstrap/bootstrap-5-navbar-with-center-logo/ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://codepen.io/badiali/pen/Vwxmzrg.css">
+<!-- BOOTSTRAP 5 - Centre Navigation Logo - End -->
+
+<!-- ABOUT ME - Start -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous">
+<!-- ABOUT ME - End -->
+
+<!-- BOOTSTRAP 5 CORE CSS - Start - Adapted from: https://getbootstrap.com/docs/5.3/getting-started/download/ -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!-- BOOTSTRAP 5 CORE CSS - End -->
+
+<!-- Your custom styles for this template - must be after Bootstrap's link element to over ride it (load after) as needed -->
+
+<!-- CUSTOM STYLES - Start -->
+<link href="css/custom.css" rel="stylesheet">
+<!-- CUSTOM STYLES - End -->
+
+<title>Faris Zaed | Portfolio</title>
+</head>
+
+<body class="bg-dark d-flex flex-column min-vh-100">
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+ <!-- HEADER - BOOTSTRAP 5 Navbar with Centre Logo - Start: https://www.codehim.com/bootstrap/bootstrap-5-navbar-with-center-logo/ -->
+
+<header data-headroom class="header fixed-top">
+      <nav class="navbar navbar-expand-lg text-uppercase py-0">
+        <a class="navbar-brand d-lg-none py-0 ms-4 me-0" href="#">
+         <span class="fw-bold"><img src="img/Hookeddownunda (2).png" class="img-fluid rounded" alt="???"></span>
+        </a>
+        <div class="offcanvas offcanvas-end vh-100" tabindex="-1" id="navbarOffcanvasLg">
+          <div class="container-lg">
+            <div class="row flex-grow-1 p-4 p-lg-0">
+              <div class="d-flex d-lg-block col-lg-4 order-1 order-lg-2 text-lg-center">
+                <button type="button" class="d-lg-none border-0 bg-transparent p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Cerrar">
+                  <i class="fa-solid fa-close"></i>
+                </button>
+                <a class="navbar-brand d-none d-lg-block py-0 me-0" href="index.html">
+                  Faris <span class="fw-bold">Zaed</span>
+                </a>
+              </div>
+              <div class="col-lg-4 order-2 order-lg-1 ms-auto ms-lg-0">
+                <ul class="navbar-nav d-flex flex-column flex-lg-row">
+                  <li class="nav-item me-4 me-xxl-5">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-3">
+                <ul class="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-end">
+                  <li class="nav-item me-4 me-xxl-5">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+</header>
+
+<!-- HEADER - BOOTSTRAP 5 Navbar with Centre Logo - End -->
+
+<div class="container">
+<div class="row">
+  <div class="col">
+    <h1 class="text-center" data-aos="fade-in" data-aos-delay="200">Faris Zaed | Resume</h1>
+
+    <h2 data-aos="zoom-out" data-aos-delay="300"><center>About Me!</center></h2>
+
+    <p data-aos="fade-in" data-aos-delay="400">Hi I'm Faris, and I'm an engineering student currently studying a Bachelor of Engineering (Honours) with a major in electrical engineering at Western Sydney University. I've completed my HSC and a diploma in engineering studies, passionate about spaceflight and spaceflight systems I am to achieve goals of becoming an aerospace engineer.</p>
+    <p data-aos="fade-in" data-aos-delay="500">Outside of university, I'm all about cinematic video editing, photography, and fishing. Whether I'm syncing a Valorant clutch to a beat drop, building a scrollable homepage for HookedDownUnda.shop, or capturing moments through the lens, I bring the same energy: expressive, strategic, and enthusiasm.</p>
+
+</div>
+</div>
+</div>
+
+<div class="divider-custom">
+  <div class="divider-custom-line"></div>
+  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+  <div class="divider-custom-line"></div>
+</div>
+
+<!-- First Parallax Image with Portfolio Text - Adapted from: view-source:https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm; Image patterns generated using Adobe Firefly  -->
+
+<section class="module parallax parallax-1" data-type="background" data-speed="10">
+  <div class="parallax-container">
+  
+  </div>
+</section>
+
+
+<!-- End First Parallax -->
+
+<div class="divider-custom">
+  <div class="divider-custom-line"></div>
+  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+  <div class="divider-custom-line"></div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="col-lg-12">
+      <h2>Education</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4">
+      <div class="job-detail candidates-profile-education text-center mb-5 mt-5" data-aos="zoom-out" data-aos-delay="600">
+
+          <div class="profile-education-icon">
+            <i class="mdi mdi-school"></i>
+          </div>
+          <h6 class="text-uppercase f-17"><a href="#" class="text-muted">University Of Western Sydney</a></h6>
+          <p class="f-14 mb-1">March 2025 - November 2025</p>
+          <p class="f-14 mb-0">Diploma In Engineering Studies</p>
+          <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+          </div>
+          <p class="f-14 mb-0">Gained hands on knowledge on Engineering Physics, Engineering Chemistry and technical computing skills. This Diploma bridge the gap between high school and university level engineering sharpening both theory and practical skills.</p>
+      </div>
+  </div>
+
+  <div class="col-lg-4">
+      <div class="job-detail candidates-profile-education text-center mb-5 mt-5" data-aos="zoom-out" data-aos-delay="600">
+
+          <div class="profile-education-icon">
+              <i class="mdi mdi-school"></i>
+          </div>
+          <h6 class="text-uppercase f-17"><a href="#" class="text-muted">Australian Islamic College Of Sydney</a></h6>
+          <p class="f-14 mb-1">Febuary 2013 - November 2024</p>
+          <p class="f-14 mb-0">High School Certificate</p>
+          <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+          </div>
+          <p class="f-14 mb-0">Completed the NSW Higher School Certificate with a focus on Standard Mathemeatics and core subjects. built foundational skills in problem solving, communication, and technical thinking.</p>
+      </div>
+  </div>
+
+  <div class="col-lg-4">
+      <div class="job-detail candidates-profile-education text-center mb-5 mt-5" data-aos="zoom-out" data-aos-delay="600">
+
+          <div class="profile-education-icon">
+              <i class="mdi mdi-school"></i>
+          </div>
+          <h6 class="text-uppercase f-17"><a href="#" class="text-muted">University Of USA</a></h6>
+          <p class="f-14 mb-1">March 2025 - Current</p>
+          <p class="f-14 mb-0">Bachelors Of Engineering honours Major in Electrical</p>
+          <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+          </div>
+          <p class="f-14 mb-0">Currently pursuing a Bachelors of engineering (Honours) majoring in electrical engineering. Focused on developing advanced technical, analytical skills through real world projects and collaborative learning.</p>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="divider-custom">
+  <div class="divider-custom-line"></div>
+  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+  <div class="divider-custom-line"></div>
+</div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+<section class="module parallax parallax-2" data-type="background" data-speed="10">
+    <div class="parallax-container">
+
+    </div>
+  </section>
+
+
+<!-- End Second Parallax -->
+
+<div class="divider-custom">
+  <div class="divider-custom-line"></div>
+  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+  <div class="divider-custom-line"></div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col">
+
+  <h2 data-aos="fade-in" data-aos-delay="300">Skills and Abilities</h2>
+  <p data-aos="fade-in" data-aos-delay="400">I have attained the following skills:</p>
+      <ul data-aos="zoom-out" data-aos-delay="500">
+      <li> <span class="standout">  Visual Studio Code </span> my go-to for HTML, CSS, JavaScript, and Shopify Liquid debugging</li>
+      <li><span class="standout"> MATLAB </span>for data analysis, simulations, and electrical system modeling</li>
+      <li> <span class="standout"> Davinci Resolve</span> for Video editing, timeline mapping, and storytelling</li>
+      <li>These tools help me bridge the gap between engineering precision and creative expression — whether I'm building a circuit simulation or syncing a video game clutch to a beat drop.</li>
+      </ul>
+
+      </div>
+      </div>
+      </div>
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+<section class="module parallax parallax-3" data-type="background" data-speed="10">
+       <div class="parallax-container">
+         
+       </div>
+     </section>      
+
+
+    <!-- End Third Parallax -->
+
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+<div class="container">
+<div class="row">
+<div class="col">
+
+
+
+<!-- Resume start -->
+<section id="resume" style="padding: 40px 0; background-color: #ffff;" data-aos="zoom-out" data-aos-delay="600">
+  <div class="container">
+    <h2 style="text-align: center;" data-aos="fade-in" data-aos-delay="700">📄 My Resume</h2>
+    <p style="text-align: center;" data-aos="fade-in" data-aos-delay="800">Download or view my resume directly below:</p>
+
+    <!-- Embedded PDF Viewer -->
+    <iframe src="C:\Users\nuhfa\Downloads\module3_2_websitedesign_start\pdf\Untitled.pdf" width="100%" height="600px" style="border: 2px solid #000000; border-radius: 8px;"></iframe>
+
+    <!-- Download PDF Button -->
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="resume.pdf" target="_blank" class="btn btn-primary">Download Resume (PDF)</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- resume end-->
+
+
+<!-- Four Parallax Image with Portfolio Text -->
+<section class="module parallax parallax-4" data-type="background" data-speed="10">
+  <div class="parallax-container">
+  </div>
+</section>
+
+
+<!-- End Four Parallax -->
+
+<div class="divider-custom">
+  <div class="divider-custom-line"></div>
+  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+  <div class="divider-custom-line"></div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="col">
+
+
+ 
+ <!-- REFERENCES HOVER EFFECT - End -->
+
+</div><!-- /.col -->
+  </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+<!-- FOOTER - Start: https://getbootstrap.com/docs/5.3/examples/footers/ -->
+    
+<div class="container mt-auto">
+
+<footer>
+<div class="row">
+<div class="col-12 text-center">
+<p>&copy; 2025 Faris Zaed</p>
+</div>
+</div>
+</footer>
+
+</div>
+    <!-- FOOTER - End -->
+
+
+<!-- =================No Content below here========================= -->
+<!-- Bootstrap JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!--  BOOTSTRAP BUNDLE WITH POPPER - Start -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<!--  BOOTSTRAP BUNDLE WITH POPPER - End -->
+
+<!-- PARALLAX SCRIPT - Start -->
+<script src="js/script1.js"></script>
+
+<!-- PARALLAX SCRIPT - End -->
+
+<!-- ABOUT ME SCRIPT - Start -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous">
+<!-- ABOUT ME SCRIPT - End -->
+
+</body>
+</html>
+
+<!-- Bootstrap 5.3 template designed for Web and Time-Based Design Subject [DESN1021]- 2023 -->
