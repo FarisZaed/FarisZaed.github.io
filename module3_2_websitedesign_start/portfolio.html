@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- Bootstrap 5.3 template designed for Web and Time-Based Design Subject [DESN1021]- 2023 -->
+<!-- Date: 13 October 2023  -->
+<!-- Author: Web and Time Based Subject -->
+
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- BOOTSTRAP META TAGS - Start -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- BOOTSTRAP META TAGS - End -->
+
+<!-- META TAGS - Start -->
+<meta name="description" content="Faris Zaed Portfolio Website">
+<meta name="author" content="Faris Zaed">
+<!-- META TAGS - End -->
+
+<!-- BOOTSTRAP 5 ICONS - Start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!-- BOOTSTRAP 5 ICONS - End -->
+
+<!-- FAVICON - Start - Adapted from: https://favicon.io/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+<!-- FAVICON - End -->
+
+<!-- FONT AWESOME - Start: https://fontawesome.com/ -->
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0b061bfed8.js" crossorigin="anonymous"></script>
+<!-- FONT AWESOME - End -->
+
+<!-- GOOGLE FONTS - Start: Oswald and Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+<!-- GOOGLE FONTS - End -->
+
+<!-- PORTFOLIO FILTER - Normalize - Start -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<!-- PORTFOLIO FILTER - Normalize - End -->
+
+<!-- BOOTSTRAP 5 - Centre Navigation Logo - Start: https://www.codehim.com/bootstrap/bootstrap-5-navbar-with-center-logo/ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://codepen.io/badiali/pen/Vwxmzrg.css">
+<!-- BOOTSTRAP 5 - Centre Navigation Logo - End -->
+
+<!-- BOOTSTRAP 5 CORE CSS - Start - Adapted from: https://getbootstrap.com/docs/5.3/getting-started/download/ -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!-- BOOTSTRAP 5 CORE CSS - End -->
+
+<!-- Your custom styles for this template - must be after Bootstrap's link element to over ride it (load after) as needed -->
+
+<!-- CUSTOM STYLES - Start -->
+<link href="css/custom.css" rel="stylesheet">
+<!-- CUSTOM STYLES - End -->
+
+<title>Faris Zaed | Portfolio</title>
+</head>
+
+<body class="bg-dark">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+    <!-- HEADER - BOOTSTRAP 5 Navbar with Centre Logo - Start: https://www.codehim.com/bootstrap/bootstrap-5-navbar-with-center-logo/ -->
+
+    <header data-headroom class="header fixed-top">
+      <nav class="navbar navbar-expand-lg text-uppercase py-0">
+        <a class="navbar-brand d-lg-none py-0 ms-4 me-0" href="index.html">
+         <span class="fw-bold"><img src="img/margeicon.jpg" class="img-fluid rounded" alt="???"></span>
+        </a>
+        <div class="offcanvas offcanvas-end vh-100" tabindex="-1" id="navbarOffcanvasLg">
+          <div class="container-lg">
+            <div class="row flex-grow-1 p-4 p-lg-0">
+              <div class="d-flex d-lg-block col-lg-4 order-1 order-lg-2 text-lg-center">
+                <button type="button" class="d-lg-none border-0 bg-transparent p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Cerrar">
+                  <i class="fa-solid fa-close"></i>
+                </button>
+                <a class="navbar-brand d-none d-lg-block py-0 me-0" href="index.html">
+                  Faris <span class="fw-bold">Zaed</span>
+                </a>
+              </div>
+              <div class="col-lg-4 order-2 order-lg-1 ms-auto ms-lg-0">
+                <ul class="navbar-nav d-flex flex-column flex-lg-row">
+                  <li class="nav-item me-4 me-xxl-5">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-3">
+                <ul class="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-end">
+                  <li class="nav-item me-4 me-xxl-5">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="navbar-toggler d-lg-none fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+  <!-- HEADER - BOOTSTRAP 5 Navbar with Centre Logo - End -->
+
+<section class="text-center py-5 text-light" data-aos="slide-down">
+  <div class="container">
+
+    <h2 class="mb-4" data-aos="fade-down" data-aos-delay="100">My Work</h2>
+
+    <!-- PDF Embed -->
+    <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+      <h5>Assessment 4: Materials & Design</h5>
+      <iframe src="Assessment 4 (codien).pdf" width="100%" height="600px" style="border: 2px solid #000000; border-radius: 8px;"></iframe>
+      <p class="mt-2">
+        <a href="docs/assessment4_codien.pdf" target="_blank" class="btn btn-outline-light btn-sm">Open Fullscreen</a>
+      </p>
+    </div>
+
+    <!-- Fishing Video -->
+    <div class="mb-5" data-aos="zoom-in-up" data-aos-delay="400">
+      <h5>Cinematic Edit</h5>
+      <div class="ratio ratio-16x9" style="max-width: 720px; margin: 0 auto;">
+        <iframe src="https://www.youtube.com/embed/D43CD7vkuZc" title="Valorant Edit" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Edit -->
+    <div class="mb-5" data-aos="zoom-in-up" data-aos-delay="400">
+      <h5>Cinematic Fishing Video</h5>
+      <div class="ratio ratio-16x9" style="max-width: 720px; margin: 0 auto;">
+        <iframe src="https://youtu.be/FT1Mo1eoe_E?si=v8ja0EOmO7jU6DQx" title="Valorant Edit" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- FOOTER - Start: https://getbootstrap.com/docs/5.3/examples/footers/ -->
+    
+<div class="container mt-auto">
+
+<footer>
+<div class="row">
+<div class="col-12 text-center">
+<p>&copy; 2025 Faris Zaed</p>
+</div>
+</div>
+</footer>
+
+</div>
+    <!-- FOOTER - End -->
+
+<!-- =================No Content below here========================= -->
+<!-- Bootstrap JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!--  BOOTSTRAP BUNDLE WITH POPPER - Start -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<!--  BOOTSTRAP BUNDLE WITH POPPER - End -->
+
+<!-- FULL FEATURED IMAGE VIEWER JS - Start -->
+<script src="js/spotlight.js"></script>
+
+<!-- FULL FEATURED IMAGE VIEWER JS - End -->
+
+<!-- PORTFOLIO FILTER - Start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+
+<script>
+$(function () {
+  
+var filterList = {
+
+  init: function () {
+  
+    // https://mixitup.kunkalabs.com/
+    $('#gallery').mixItUp({
+      selectors: {
+        target: '.gallery-item',
+        filter: '.filter'	
+      },
+      load: {
+        filter: '.print, .strategy, .logo, .web' // show all items on page load.
+      }     
+    });								
+  
+  }
+
+};
+
+// Filter ALL the things
+filterList.init();
+
+});
+</script>
+<!-- PORTFOLIO FILTER - End -->
+
+
+          </body>
+    </html>
+
+<!-- Bootstrap 5.3 template designed for Web and Time-Based Design Subject [DESN1021]- 2023 -->
